@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'second',
     loadChildren: () => import('./second/second.module').then((s) => s.SecondModule),
+  },
+  {
+    path: 'third',
+    loadComponent: () => import('./third/third.component').then((t) => t.ThirdComponent)
   }
 ];
 

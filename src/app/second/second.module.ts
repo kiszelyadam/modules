@@ -9,6 +9,9 @@ import { SecondRoutingModule } from "./second-routing.module";
     imports: [
         FirstModule,
         SecondRoutingModule
+    ],
+    exports: [
+        SecondComponent
     ]
 })
 
